@@ -12,30 +12,52 @@
 </head>
 
 <body>
-
-    <!--cria a navbar-->
-    <nav class="navbar navbar-inverse vavbar-static-top">
-
+    <nav class="navbar navbar-inverse navbar-static-top">
         <!--cria o container do cabecalho da barro de navegacao-->
         <div class="container">
             <!--crio o header da barra-->
             <div class="navbar-header">
+                <!--cria o button de menu da barra de navegacao-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <!--link para retornar para a home-->
                 <a href="home.html" class="navbar-brand logotipo">
                     <img src="img/watchguru.png" alt="Watch Guru">
                 </a>
             </div>
-
-            <!--cria o menu da barra de navegação-->
-            <ul class="nav navbar-nav">
-                <li><a href="">Ordens de Serviço</a></li>
-                <li><a href="">Clientes</a></li>
-                <li><a href="">Funcionários</a></li>
-                <li><a href="">Serviços</a></li>
-            </ul>
+            <!--cria o menu da barra de navegacao-->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="">Ordens de Serviço</a></li>
+                    <li><a href="">Clientes</a></li>
+                    <li><a href="">Funcionários</a></li>
+                    <li><a href="">Serviços</a></li>
+                </ul>
+                <!--cria o dropdown do menu-->
+                <ul class="nav navbar-nav navbar-right">
+                    <!--botao que abre o dropdown-->
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Minha Conta
+                            <span class="caret"></span>
+                        </a>
+                        <div class="dropdown-menu perfil">
+                            <ul class="list-unstyled">
+                                <li>Fulano de Tal</li>
+                                <li><a href="">Alterar Perfil</a></li>
+                                <li><a href="">Sair</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!--fim navbar-->
+
 
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
