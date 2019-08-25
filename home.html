@@ -8,12 +8,34 @@
     <title></title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
 
-    <div class="login-form col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4"></div>
+    <!--cria a navbar-->
+    <nav class="navbar navbar-inverse vavbar-static-top">
+
+        <!--cria o container do cabecalho da barro de navegacao-->
+        <div class="container">
+            <!--crio o header da barra-->
+            <div class="navbar-header">
+                <!--link para retornar para a home-->
+                <a href="home.html" class="navbar-brand logotipo">
+                    <img src="img/watchguru.png" alt="Watch Guru">
+                </a>
+            </div>
+
+            <!--cria o menu da barra de navegação-->
+            <ul class="nav navbar-nav">
+                <li><a href="">Ordens de Serviço</a></li>
+                <li><a href="">Clientes</a></li>
+                <li><a href="">Funcionários</a></li>
+                <li><a href="">Serviços</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--fim navbar-->
 
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
